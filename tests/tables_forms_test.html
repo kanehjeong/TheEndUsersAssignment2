@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Assignment 2</title>
+            </head>
+    <body>
+        <table>
+            <caption>
+                This is a test
+            </caption>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                </tr>
+                <tr>
+                    <td>Heading 1</td>
+                    <td>Heading 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Input</td>
+                    <td>
+                        <form>
+                            <label>Full name: <input type="text"></label>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select/Option</td>
+                    <td>
+                        <form>
+                            <select>
+                                <option value="1"> Option 1 </option>
+                                <option value="2"> Option 2 </option>
+                            </select>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Datalist/Option</td>
+                    <td>
+                        <form>
+                            <input list="genders">
+                                <datalist id="genders">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </datalist>
+                                <input type="submit" value="Submit">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TextArea</td>
+                    <td>
+                        <textarea></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Keygen</td>
+                    <td>
+                        <keygen>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Output/Input</td>
+                    <td>
+                        <form onsubmit="return false" oninput="o.value = a.value + b.value">
+                            <input name=a type=text> +
+                            <input name=b type=text> =
+                        <output name=o for="a b"></output>
+                    </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Progress</td>
+                    <td>
+                        <progress value="50" max="100"></progress>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Meter</td>
+                    <td>
+                        <meter value="0.5"></meter>
+                    </td>
+                </tr>
+                <tr>
+                    <td>FieldSet/Legend</td>
+                    <td>
+                        <fieldset>
+                            <legend>Testing</legend>
+                            <label><input type=radio>Check here </label>
+                        </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
