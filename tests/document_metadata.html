@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Document Metadata Tests</title>
+
+		<!-- Meta tags -->
+		<meta charset="UTF-8"> <!-- Character encoding -->
+		<meta name="description" content="Creating html5 tests for CSE134B!"> <!-- Description of webpage -->
+		<meta name="keywords" content="HTML,HTML5,Client Side,Test,CSE134B,Web"> <!-- Keywords for search engines -->
+		<meta name="author" content="The End Users"> <!-- Define author of page -->
+		<meta http-equiv="refresh" content="30"> <!-- Page Refreshes every 30 seconds -->
+		<title>Document Metadata Tests Title</title>
+
+		<base href="../"> <!-- make directory above the base -->
+		<link rel="stylesheet" type="text/css" href="resources/css/document_metadata.css" lang="en">
+		<link rel="alternate" hreflang="es" type="text/html" href="document_metadata-es.html">
+
+		<script type="text/javascript">
+	      function load() {
+	        document.getElementById("js-script").innerHTML = "This sentence was created when the page loads using the script tag with javascript.";
+	      }
+	      window.onload = load;
+		</script>
 	</head>
 	<body>
+		<p>The tab of this page should be labeled as Document Metadata Tests</p>
+
+		<p><a href="tests/document_metadata.html">This</a> should lead the this same page but using a different path due to the base url</p>
+
+		<p>Page should be centered due to css linking with body having a text-align: center defined</p>
+
+		<p>This page refreshes every 30 seconds due to the &lt;meta&gt; tag declaration with <strong>http-equiv</strong>=&quot;refresh&quot; <strong>content</strong>=&quot;30&quot; attributes defined!</p>
+
+		<p id="js-script"></p>
 	</body>
 </html>
