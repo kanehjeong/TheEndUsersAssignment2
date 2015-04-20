@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Embed Test</title>
+	</head>
+	<body>
+    
+    
+    
+    
+    <p>A page that tests various embedded content.
+    
+    <br><br><br><br>
+    
+    
+    
+    <p>Testing the img element.<br>
+    <img src="embeddedcontent/ucsdlogo.png" alt="UCSD logo" width="50" height="50"><br>
+    
+    <p>This should display a broken image:<br>
+    <img src="asdasdasd.png" alt="testing bad img src" width="200" height="30">
+    
+    <br><br><br><br>
+    
+    
+    
+    <p>Testing an iframe. It should display the UCSD webpage inside.<br>
+    <iframe src="http://ucsd.edu" width="400" height="200" name="box"></iframe>
+
+    
+    
+    <br><br><br><br>
+    
+    
+    
+    <p>An image map. This tests the map element and area element. Mouse over the silver or gold bars and click them to open a page in a new window.<br>
+    <img src="embeddedcontent/maparea.jpg" alt="" usemap="#Map">
+    <map name="Map" id="Map">
+    <area alt="Silver bar" title="Go to UCSD (open in new window)" href="http://ucsd.edu" shape="poly" target="_blank" coords="206,119,46,135,26,207,76,293,283,274,321,238,202,151">
+    <area alt="Gold bar" title="Go to CSE 134B (open in new window)" href="http://classes.pint.com/cse134b/" target="_blank" shape="poly" coords="273,46,447,154,427,301,210,135">
+    </map>
+    
+    
+    <br><br><br><br>
+    
+    
+    
+    
+    <p>Testing the math element. Should display a matrix: <br>
+    <math>
+        <mrow>
+            <mi>A</mi>
+            <mo>=</mo>
+            <mfenced open="[" close="]">
+                <mtable>
+                    <mtr>
+                        <mtd><mi>x</mi></mtd>
+                        <mtd><mi>y</mi></mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd><mi>z</mi></mtd>
+                        <mtd><mi>w</mi></mtd>
+                    </mtr>
+                </mtable>
+            </mfenced>
+        </mrow>
+    </math>
+        
+        
+        
+    <br><br><br><br>
+
+    
+    
+    
+    <p>Testing the svg element. Should display a blue rectangle with a black outline.<br>
+    <svg width="400" height="100">
+    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>
+        
+        
+        
+    <br><br><br><br>
+    
+    
+    
+
+        
+    <p>A swf file embedded using the embed element.<br>
+    <embed src="embeddedcontent/embedtest.swf" quality="high">
+    
+    
+    
+    
+    <br><br><br><br>
+    
+    
+    
+    
+    <p>An HTML page embedded using the object element.<br>
+    <object data="http://ucsd.edu"></object>
+    
+    
+    <br><br><br><br>
+
+    
+    
+    <p>A mp4 file embedded using the video element with controls and loop.<br>
+    <video src="embeddedcontent/vidtest.mp4" controls loop width="250" height="200"></video>
+
+    
+    
+    
+    <br><br><br><br>
+    
+    
+    
+    
+    <p>A wav file embedded using the audio element with controls.<br>
+    <audio src="embeddedcontent/audiotest.wav" preload="auto" controls></audio>
+    
+    
+    
+    
+    <br><br><br><br>
+    
+    
+    
+    
+    <p>Testing the source element with a mp4 file and a ogg file with the video element. 
+    Also testing the track element which is supposed to provide subtitles.<br>
+    <video controls width="250" height="200">
+        <source src="embeddedcontent/sourcetest.mp4" type="video/mp4">
+        <source src="embeddedcontent/sourcetest.ogv" type="video/ogg">
+        <track kind="subtitles" src="embeddedcontent/tracktest.vtt" srclang="en" label="English" default>
+    </video>
+ 
+ 
+ 
+    
+	</body>
+</html>
