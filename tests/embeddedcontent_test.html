@@ -15,7 +15,7 @@
     
     
     <p>Testing the img element.</p>
-    <img src="embeddedcontent/ucsdlogo.png" alt="UCSD logo" width="50" height="50">
+    <img src="../resources/tests/embeddedcontent/ucsdlogo.png" alt="UCSD logo" width="50" height="50">
     
     <p>This is a broken image and with the alt text "testing bad img src":</p>
     <img src="asdasdasd.png" alt="testing bad img src" width="200" height="30">
@@ -32,7 +32,7 @@
     
     
     <p>An image map. This tests the map element and area element. Mouse over the silver or gold bars and click them to open a page in a new window.</p>
-    <img src="embeddedcontent/maparea.jpg" alt="" usemap="#Map">
+    <img src="../resources/tests/embeddedcontent/maparea.jpg" alt="" usemap="#Map">
     <map name="Map" id="Map">
     <area alt="Silver bar" title="Go to UCSD (open in new window)" href="http://ucsd.edu" shape="poly" target="_blank" coords="206,119,46,135,26,207,76,293,283,274,321,238,202,151">
     <area alt="Gold bar" title="Go to CSE 134B (open in new window)" href="http://classes.pint.com/cse134b/" target="_blank" shape="poly" coords="273,46,447,154,427,301,210,135">
@@ -82,7 +82,7 @@
 
         
     <p>A swf file embedded using the embed element.</p>
-    <embed src="embeddedcontent/embedtest.swf" quality="high">
+    <embed src="../resources/tests/embeddedcontent/embedtest.swf" quality="high">
     
     
     
@@ -99,7 +99,7 @@
     
     
     <p>A mp4 file embedded using the video element with controls and loop.</p>
-    <video src="embeddedcontent/vidtest.mp4" controls loop width="250" height="200"></video>
+    <video src="../resources/tests/embeddedcontent/vidtest.mp4" controls loop width="250" height="200"></video>
 
     
     
@@ -109,7 +109,7 @@
     
     
     <p>A wav file embedded using the audio element with controls.</p>
-    <audio src="embeddedcontent/audiotest.wav" preload="auto" controls></audio>
+    <audio src="../resources/tests/embeddedcontent/audiotest.wav" preload="auto" controls></audio>
     
     
     
@@ -121,9 +121,9 @@
     <p>Testing the source element with a mp4 file and a ogg file with the video element. 
     Also testing the track element which is supposed to provide subtitles.</p>
     <video controls width="250" height="200">
-        <source src="embeddedcontent/sourcetest.mp4" type="video/mp4">
-        <source src="embeddedcontent/sourcetest.ogv" type="video/ogg">
-        <track kind="subtitles" src="embeddedcontent/tracktest.vtt" srclang="en" label="English" default>
+        <source src="../resources/tests/embeddedcontent/sourcetest.mp4" type="video/mp4">
+        <source src="../resources/tests/embeddedcontent/sourcetest.ogv" type="video/ogg">
+        <track kind="subtitles" src="../resources/tests/embeddedcontent/tracktest.vtt" srclang="en" label="English" default>
     </video>
  
  
