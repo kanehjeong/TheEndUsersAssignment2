@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Script Test</title>
+        <style>
+            canvas{
+                width:200px;
+                height:200px;
+                background-color:yellow;
+            }
+        </style>
+                
+    </head>
+    <body>
+        <script>
+            document.write("This is in the script")
+        </script>
+        <noscript>
+            This is in no script!
+        </noscript>
+        <template id="test">
+            <p></p>
+        </template>
+        <script>
+            var template = document.getElementById("test");
+            var clone = template.content.cloneNode(true);
+            var paragraph = clone.querySelectorAll('p')[0];
+            paragraph.textContent = "Testing Template";
+            template.parentNode.appendChild(clone);
+        </script>
+        <p>Testing canvas</p>
+        <canvas>
+        </canvas>
+    </body>
+</html>
